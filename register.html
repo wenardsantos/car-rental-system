@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <style>
+    * {padding:0; margin:0;}
+
+    body {
+      background-image: url('homepage-landscape.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+    }
+
+    .register-container {
+      margin-top: 10%; 
+      margin-left: center;
+    }
+
+    .form-container {
+      max-width: 500px;
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 20px;
+    }
+
+    </style>
+  </head>
+  <body>
+
+    <!-- Navigation bar -->
+
+    <div class="container-fluid bg-primary text-white">
+      <div class="row pt-2">
+        <div class="col-sm-3 text-white h2">Logo</div>
+        <div class="col-sm-5 text-white">
+          <input class="form-control input-sm" type="text" placeholder="Search for a car">
+        </div>
+       <div class="col-sm-4 row pl-1 pt-1">
+          <div class="col"><a href="index.html" class="text-white text-decoration-none">Home</a></div>
+          <div class="col"><a href="index.html" class="text-white text-decoration-none">Car list</a></div>
+          <div class="col"><a href="index.html" class="text-white text-decoration-none">About</a></div>
+          <div class="col"><a href="login.html" class="text-white text-decoration-none">Profile</a></div>
+       </div>
+      </div>
+    </div>
+    
+    <div class="container register-container">
+      <div class="row">
+        <div class="col-md-6 form-container">
+          <h2>Register</h2>
+          <form>
+            <div class="row mb-2">
+              <div class="col">
+                <label for="first-name" class="form-label">First name:</label>
+                <input type="text" class="form-control" id="first-name" required>
+              </div>
+              <div class="col">
+                <label for="last-name" class="form-label">Last name:</label>
+                <input type="text" class="form-control" id="last-name" required>
+              </div>
+            </div>
+            <div class="mb-2"> 
+              <label for="loginEmail" class="form-label">Email:</label>
+              <input type="text" class="form-control" id="loginEmail" required>
+            </div>
+            <div class="mb-2">
+              <label for="loginPassword" class="form-label">Password:</label>
+              <input type="password" class="form-control" id="loginPassword" required>
+            </div>
+            <button type="submit" class="btn btn-success">Log in</button>
+            <div>
+              <label class="form-label">Already have an account? <a href="login.html " class="text-decoration-none">Sign in here</a> </label>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+        
+    <!-- Bootstrap -->
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
